@@ -16,9 +16,18 @@ container.buttons {
 form {
     margin-left: 10px;
 }
+#giphy-input {
+    margin-left: 10px;
+}
 #add-gif {
     margin-top: 10px;
 }
+
+.gifs-here {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 
 /* 
     .gif {
