@@ -21,23 +21,42 @@ form {
 }
 #add-gif {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .gifs-here {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
+.gifDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* 
-    .gif {
-        cursor: pointer;
+p {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
 
-    .gif:hover {
-        outline: ....
-        box-shadow: ...
-        outline: ...
+.giphy {
+    cursor: pointer;
+}
+
+.giphy:hover {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+@media screen and (max-width: 960px) {
+    .gifs-here {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
     }
-
-*/
+}
