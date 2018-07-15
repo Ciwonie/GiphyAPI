@@ -1,7 +1,26 @@
+/* font-family: 'Righteous', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Roboto', sans-serif; */
+
 .title {
     text-align: center;
     margin-bottom: 10px;
+    font-family: 'Anton', sans-serif;
+    color: #ffffff;
+    font-size: 100px;
+    letter-spacing: -2.5px;
 }
+
+body {
+    background-image: url("../images/topography.svg"),
+      linear-gradient(110deg, #C1292E, #737473);
+    background-size: 340px, auto;
+    /* min-height: calc(100vh - 100px); */
+    margin: 50px;
+    /* background: white; */
+    background-attachment: fixed;
+    letter-spacing: -1px;
+  }
 
 
 container.buttons {
@@ -20,11 +39,22 @@ form {
     margin-left: 10px;
 }
 #add-gif {
+    font-family: 'Righteous', cursive;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
 
 .gifs-here {
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -34,6 +64,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 
 p {
@@ -45,12 +76,73 @@ p {
 
 .giphy {
     cursor: pointer;
+    margin-bottom: 5px;
 }
 
 .giphy:hover {
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px #888888;
+    transition: all .07s ease;
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+#add-gif:hover {
+    background-color: #235789;
+    color: #D6FFF6;
+}
+
+#add-gif:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.gifs {
+    font-family: 'Righteous', cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.gifs:hover {
+    background-color: #235789;
+    color: #D6FFF6;
+}
+
+.gifs:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+label {
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+form {
+    margin-bottom: 12px;
+}
+
+input {
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    line-height: 36px;
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+}
+
+p {
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 24px;
 }
 
 @media screen and (max-width: 960px) {
@@ -59,4 +151,14 @@ p {
         grid-template-columns: 1fr;
         grid-gap: 20px;
     }
+
+    container.buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px; */
+    }
+
 }
